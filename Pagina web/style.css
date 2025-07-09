@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+header {
+  background: #004c99;
+  color: lightgray;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 90px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background: url('img/banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+
+#servicios {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.servicio {
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  vertical-align: top;
+}
+
+.servicio img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+.producto {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin: 15px auto;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.producto h3 {
+  margin-top: 10px;
+  color: #004c99;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #444;
+}
+
+.producto span {
+  font-weight: bold;
+  color: #e68a00;
+}
+
+.imagen-producto {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Botón de mercancía */
+#btn-mercancia {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btn-mercancia:hover {
+  background-color: #e68a00;
+}
+
+/* Sección mercancía */
+#mercancia {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Secciones nosotros y contacto */
+#nosotros,
+#contacto {
+  padding: 40px 20px;
+  text-align: center;
+}
+form button {
+  background: #004c99;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #003366;
+}
+
+/* Formulario */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #004c99;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
