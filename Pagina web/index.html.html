@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Multisolution Informatic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="Imagenes/logo.jpg" alt="Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="banner">
+    <img src="Imagenes/imagen.jpg" alt="Banner principal">
+    <h1>Soluciones tecnológicas para tu empresa</h1>
+    <p>Redes, soporte, digitalización y más…</p>
+  </section>
+
+
+  <button onclick="mostrarMercancia()" id="btn-mercancia">Que ofrecemos</button>
+
+ 
+  <div id="mercancia" style="display: none;">
+    <h2>Nuestra mercancía y servicios</h2>
+
+    <div class="producto">
+      <img src="Imagenes/laptop dell.jpg" alt="Laptop Dell" class="imagen-producto">
+      <h3>Laptop Dell i5</h3>
+      <p>Computadora portátil con 8GB RAM y 256GB SSD, ideal para trabajo y estudio.</p>
+      <span>RD$ 35,000</span>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/impresora.jpg" alt="Impresora Epson" class="imagen-producto">
+      <h3>Impresora Epson EcoTank</h3>
+      <p>Impresión económica y sin cartuchos, perfecta para oficina y hogar.</p>
+      <span>RD$ 12,000</span>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/camara.jpg" alt="Cámara de seguridad" class="imagen-producto">
+      <h3>Cámara de seguridad HD</h3>
+      <p>Grabación en alta definición con visión nocturna y acceso remoto.</p>
+      <span>RD$ 8,500</span>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/soporte t.jpg" alt="Soporte Técnico" class="imagen-producto">
+      <h3>Soporte técnico remoto</h3>
+      <p>Atención y solución de problemas técnicos vía online o telefónica.</p>
+      <span>Desde RD$ 500 por sesión</span>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/lan.jpg" alt="Instalación de redes" class="imagen-producto">
+      <h3>Instalación de redes LAN</h3>
+      <p>Montaje y mantenimiento de redes cableadas para hogares y empresas.</p>
+      <span>Desde RD$ 7,000</span>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/backup.jpg" alt="Backup y recuperación" class="imagen-producto">
+      <h3>Backup y recuperación de datos</h3>
+      <p>Protección y restauración de información vital para tu empresa.</p>
+      <span>Desde RD$ 3,000</span>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/mantenimiento.jpg" alt="Mantenimiento de equipos" class="imagen-producto">
+      <h3>Mantenimiento preventivo de equipos</h3>
+      <p>Limpieza, diagnóstico y optimización de computadoras y servidores.</p>
+      <span>Desde RD$ 1,500</span>
+    </div>
+
+  </div>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio">
+      <img src="Imagenes/Redes y cableado.jpg" alt="Redes">
+      <h3>Redes y Cableado</h3>
+      <p>Instalación profesional de infraestructura de red.</p>
+    </div>
+    <div class="servicio">
+      <img src="Imagenes/Soporte tecnico.jpg" alt="Soporte">
+      <h3>Soporte Técnico</h3>
+      <p>Mantenimiento, diagnóstico y asistencia.</p>
+    </div>
+    <div class="servicio">
+      <img src="Imagenes/diseño web.jpg" alt="Web">
+      <h3>Diseño Web</h3>
+      <p>Creación de páginas profesionales y responsivas.</p>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa de tecnología ubicada en San José de Ocoa. Brindamos soluciones modernas y confiables a instituciones y negocios locales.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Multisolution Informatic - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarMercancia() {
+      var x = document.getElementById("mercancia");
+      var btn = document.getElementById("btn-mercancia");
+
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        btn.textContent = "Ocultar mercancía";
+      } else {
+        x.style.display = "none";
+        btn.textContent = "Que ofrecemos";
+      }
+    }
+  </script>
+
+</body>
+</html>
